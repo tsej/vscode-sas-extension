@@ -99,7 +99,7 @@
   "The notebook has been successfully converted to a flow and saved into the following folder: {folderName}. You can now open it in SAS Studio.": "------ The notebook has been successfully converted to a flow and saved into the following folder: {folderName}. You can now open it in SAS Studio.",
   "The output file name must end with the .flw extension.": "------ The output file name must end with the .flw extension.",
   "The SAS session has closed.": "------ The SAS session has closed.",
-  "The {selected} SAS connection profile has been deleted from the settings.json file.": "------ The {selected} SAS connection profile has been deleted from the settings.json file."
+  "The {selected} SAS connection profile has been deleted from the settings.json file.": "------ The {selected} SAS connection profile has been deleted from the settings.json file.",
   "Unable to add file to my folder.": "------ Unable to add file to my folder.",
   "Unable to create file \"{name}\".": "------ Unable to create file \"{name}\".",
   "Unable to create folder \"{name}\".": "------ Unable to create folder \"{name}\".",
@@ -117,5 +117,5 @@
   "Uploading files...": "Wysyłanie plików...",
   "View SAS Table": "------ View SAS Table",
   "You can also specify connection profile using the settings.json file.": "------ You can also specify connection profile using the settings.json file.",
-  "You must save your file before you can rename it.": "------ You must save your file before you can rename it.",
+  "You must save your file before you can rename it.": "------ You must save your file before you can rename it."
 }
