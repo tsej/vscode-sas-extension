@@ -429,8 +429,11 @@ export class ContentModel {
         "DELETE",
         "deleteRecursively",
       )?.uri;
-      const deleteResourceLink = getLink(item.links, "DELETE", "deleteResource")
-        ?.uri;
+      const deleteResourceLink = getLink(
+        item.links,
+        "DELETE",
+        "deleteResource",
+      )?.uri;
       if (!deleteRecursivelyLink && !deleteResourceLink) {
         return false;
       }
@@ -444,8 +447,11 @@ export class ContentModel {
   }
 
   private async deleteResource(item: ContentItem): Promise<boolean> {
-    const deleteResourceLink = getLink(item.links, "DELETE", "deleteResource")
-      ?.uri;
+    const deleteResourceLink = getLink(
+      item.links,
+      "DELETE",
+      "deleteResource",
+    )?.uri;
     if (!deleteResourceLink) {
       return false;
     }
@@ -525,10 +531,10 @@ export class ContentModel {
     const deleteMemberUri = item.flags?.isInMyFavorites
       ? getLink(item.links, "DELETE", "delete")?.uri
       : item.flags?.hasFavoriteId
-      ? `${getResourceIdFromItem(
-          this.getDelegateFolder("@myFavorites"),
-        )}/members/${item.flags?.hasFavoriteId}`
-      : undefined;
+        ? `${getResourceIdFromItem(
+            this.getDelegateFolder("@myFavorites"),
+          )}/members/${item.flags?.hasFavoriteId}`
+        : undefined;
     if (!deleteMemberUri) {
       return false;
     }
